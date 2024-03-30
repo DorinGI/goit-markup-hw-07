@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700;900&display=swap"
     />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Studio</title>
   </head>
   <body>
     <!-- Bara de navigare -->
@@ -32,7 +32,7 @@
             </li>
           </ul>
         </nav>
-        <ul>
+        <ul class="nav-contacts">
           <li>
             <a class="nav-item" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -44,6 +44,92 @@
             >
           </li>
         </ul>
+        <!-- Burger menu mobile -->
+        <div class="container-menu-mobile">
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button type="button" class="close-btn js-close-menu">x</button>
+
+            <ul class="mobile-menu">
+              <li><a href="./index.html" class="link">Studio</a></li>
+              <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+              <li><a href="./contacts.html" class="link">Contacts</a></li>
+            </ul>
+            <ul class="modal-contacts">
+              <li>
+                <a class="modal-contact-tel" href="tel:+11(000)111-11-11"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="modal-contact-mail" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <div class="modal-social-list">
+              <a
+                href="https://www.instagram.com/"
+                class="social"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="instagram-link"
+              >
+                <svg>
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a
+                href="https://twitter.com/"
+                class="social"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="twitter-link"
+              >
+                <svg>
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+              <a
+                href="https://www.facebook.com/"
+                class="social"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="facebook-link"
+              >
+                <svg>
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+              <a
+                href="https://www.linkedin.com/"
+                class="social"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="linkedin-link"
+              >
+                <svg>
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Continutul siteului -->
@@ -56,6 +142,7 @@
             Order Service
           </button>
         </div>
+        <!-- Modal inputs -->
         <div class="modal is-hidden" data-modal>
           <div class="modal-content">
             <button type="button" class="close-btn" data-modal-close>x</button>
@@ -139,9 +226,8 @@
               </div>
               <h3 class="strenght-name">Strategy</h3>
               <p class="strenght-description">
-                Our goal is to identify the business<br />
-                problem to walk away with the<br />
-                perfect and creative solution.
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
               </p>
             </li>
             <li>
@@ -152,8 +238,7 @@
               </div>
               <h3 class="strenght-name">Punctuality</h3>
               <p class="strenght-description">
-                Bring the key message to the<br />
-                brand's audience for the best price<br />
+                Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
@@ -165,9 +250,8 @@
               </div>
               <h3 class="strenght-name">Diligence</h3>
               <p class="strenght-description">
-                Research and confirm brands that<br />
-                present the strongest digital growth<br />
-                opportunities and minimize risk.
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
               </p>
             </li>
             <li>
@@ -178,9 +262,8 @@
               </div>
               <h3 class="strenght-name">Technologies</h3>
               <p class="strenght-description">
-                Design practice focused on digital<br />
-                experiences. We bring forth a deep<br />
-                passion for problem-solving.
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
               </p>
             </li>
           </ul>
@@ -552,5 +635,6 @@
     </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/navbar-underline.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
