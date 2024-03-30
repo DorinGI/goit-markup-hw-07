@@ -152,6 +152,7 @@ ul {
   flex-wrap: wrap;
   row-gap: 64px;
   column-gap: 24px;
+  padding-left: 15px;
   justify-content: center;
 }
 .strenghts-section li {
@@ -309,17 +310,17 @@ ul {
   color: var(--color-cloud);
 }
 .filter-buttons {
-  padding: 96px 0 72px 0;
+  padding: 48px 0 48px 0;
 }
 .filter-buttons ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
   padding: 10px 20px;
 }
 .filter-buttons li {
   list-style-type: none;
-  margin-right: 24px;
 }
 .filter-button {
   font-family: 'Roboto', sans-serif;
@@ -352,8 +353,6 @@ ul {
   border: 1px solid var(--color-cornflower);
   width: 360px;
   height: 420px;
-  margin-right: 24px;
-  margin-bottom: 48px;
   background: var(--color-white);
 }
 .overlay-image {
@@ -391,7 +390,11 @@ ul {
   height: 300px;
 }
 .filter-cards .container-filter-cards ul {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  padding-left: 0px;
+  gap: 24px;
 }
 .filter-card-name {
   font-family: 'Roboto', sans-serif;
@@ -835,6 +838,10 @@ ul {
 .modal-contact-mail:focus {
   color: var(--color-iris);
 }
+/* Contacts */
+.contacts-text {
+  margin-left: 20px;
+}
 
 /* Responsive design */
 /* Stiluri Mobile si pentru dispozitive incepand cu 428px */
@@ -976,6 +983,17 @@ ul {
   .subscribe-form input {
     margin-right: 24px;
   }
+
+  /* Portfolio */
+  .filter-buttons {
+    padding: 64px 0 64px 0;
+  }
+  .filter-buttons ul {
+    justify-content: center;
+  }
+  .filter-cards .container-filter-cards ul {
+    justify-content: center;
+  }
 }
 
 /* Stiluri desktop si dispozitive incepand cu 1158px*/
@@ -1079,5 +1097,10 @@ ul {
   }
   .subscribe-form input {
     width: 250px;
+  }
+
+  /* Portfolio */
+  .filter-buttons {
+    padding: 96px 0 72px 0;
   }
 }
