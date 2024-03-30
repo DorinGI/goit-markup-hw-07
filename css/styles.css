@@ -42,9 +42,9 @@ ul {
   padding: 60px 0;
 }
 
-.global-header a {
+.nav-contacts a {
   text-decoration: none;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 .nav-contacts {
   display: none;
@@ -193,7 +193,7 @@ ul {
 }
 .our-team-section li {
   list-style-type: none;
-  margin-right: 24px;
+  /* margin-right: 24px; */
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px 0px;
   width: 264px;
@@ -275,7 +275,7 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
   padding: 20px 0 100px 0;
 }
 .customer-logo-panel {
@@ -415,6 +415,8 @@ ul {
 }
 .global-footer a {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 .footer-container {
   /* width: 1200px; */
@@ -427,14 +429,13 @@ ul {
 .footer-content {
   width: 264px;
   /* margin-left: 400px; */
-  padding: 100px 0;
   box-sizing: border-box;
-  padding: 100px 0;
+  padding-top: 100px;
   /* margin-right: 120px; */
 }
 .social-media-footer {
   box-sizing: border-box;
-  margin-top: 100px;
+  margin-top: 72px;
 }
 .social-media-footer p {
   margin: auto;
@@ -445,7 +446,9 @@ ul {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
-  text-align: left;
+
+  display: flex;
+  justify-content: center;
 }
 .social-list-footer {
   display: flex;
@@ -473,7 +476,7 @@ ul {
   transform: scale(1.05);
 }
 .subscribe-footer {
-  margin-top: 100px;
+  margin-top: 72px;
   /* margin-left: 125px; */
   margin-bottom: 96px;
 }
@@ -484,6 +487,9 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-white);
+
+  display: flex;
+  justify-content: center;
 }
 .subscribe-form {
   display: flex;
@@ -496,12 +502,12 @@ ul {
   letter-spacing: 0.04em;
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 264px;
+  width: 350px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   color: #fff;
   background-color: var(--color-navy-blue);
-  margin: 16px 24px 0px 0px;
+  margin: 16px 0px 0px 0px;
   padding-left: 16px;
 }
 .subscribe-form input::placeholder {
@@ -744,7 +750,6 @@ ul {
 }
 .mobile-menu {
   padding: 0;
-  margin: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -768,7 +773,11 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: 220px;
+  margin-top: 284px;
+  padding-left: 0px;
+}
+.modal-contacts a {
+  text-decoration: none;
 }
 
 .modal-contacts li {
@@ -781,6 +790,7 @@ ul {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-slate);
+  margin-right: 0px;
 }
 
 .modal-contact-mail {
@@ -827,8 +837,11 @@ ul {
 }
 
 /* Responsive design */
+/* Stiluri Mobile si pentru dispozitive incepand cu 428px */
+/* @media screen and (min-width: 428px) {
+} */
 
-/* Stiluri tabletă si dipozitive mai incepand cu 768px */
+/* Stiluri tabletă si dipozitive incepand cu 768px */
 @media screen and (min-width: 768px) {
   .nav-bar {
     display: contents;
@@ -900,7 +913,7 @@ ul {
     justify-content: center;
   }
   .strenghts-section li {
-    width: 356px;
+    width: 350px;
     align-items: flex-start;
   }
   .strenght-name {
@@ -925,29 +938,59 @@ ul {
   }
   .customers-logos {
     flex-wrap: wrap;
+    gap: 30px;
   }
   .customer-logo-panel {
     flex-wrap: wrap;
     width: 168px;
     height: 88px;
   }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 70px;
+    justify-content: flex-start;
+  }
   .footer-content {
     margin-right: 120px;
+  }
+  .subscribe {
+    justify-content: flex-start;
   }
   .subscribe-form {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
+  .social-media-footer {
+    margin-top: 0px;
+  }
+  .social-media-footer p {
+    padding: 100px 0 10px 0;
+  }
+  .global-footer a {
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .subscribe-form input {
+    margin-right: 24px;
+  }
 }
+
 /* Stiluri desktop si dispozitive incepand cu 1158px*/
 @media screen and (min-width: 1158px) {
   .container {
     width: 1200px;
   }
+  .global-header .container-navbar {
+    justify-content: space-around;
+  }
   .nav-contacts {
     display: flex;
     flex-direction: row;
+    gap: 20px;
+    margin-left: 61px;
   }
   .strenght-logo {
     width: 264px;
@@ -997,9 +1040,6 @@ ul {
     width: 360px;
     height: 300px;
   }
-  /* .what-are-we-doing-box {
-  padding: 100px 0;
-} */
   .title-what-are-we-doing {
     font-weight: 700;
     font-size: 36px;
@@ -1009,6 +1049,9 @@ ul {
     text-align: center;
     color: var(--color-navy-blue);
     padding-bottom: 40px;
+  }
+  .our-team-section ul {
+    gap: 24px;
   }
   .customers-logos {
     flex-wrap: nowrap;
@@ -1021,9 +1064,20 @@ ul {
     width: 1200px;
     display: flex;
     margin: auto;
-    align-items: flex-start;
+    align-items: baseline;
+    margin: auto;
+    gap: 50px;
+  }
+  .social-media-footer p {
+    justify-content: flex-start;
   }
   .subscribe-footer {
-    margin-left: 125px;
+    margin-left: 25px;
+  }
+  .subscribe-form label {
+    /* width: 20px; */
+  }
+  .subscribe-form input {
+    width: 250px;
   }
 }
